@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 SEA'S SOLUTIONS - Human Resource Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header img {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background: #00509e;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 10px 25px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #003366;
+        }
+
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 6px #000;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            padding: 30px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            background: white;
+            margin: 25px 0;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #003366;
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+
+        .section img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        form input, form button, form label {
+            width: 100%;
+            display: block;
+            margin: 10px 0;
+        }
+
+        form input {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #003366;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        form button:hover {
+            background-color: #00509e;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 10px;
+                border-bottom: 1px solid #004080;
+            }
+
+            .hero {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="3 SEA'S SOLUTIONS Logo">
+        <h1>3 SEA'S SOLUTIONS</h1>
+    </header>
+
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#recruitment">Recruitment Procedure</a>
+        <a href="#services">Services</a>
+        <a href="#apply">Apply Now</a>
+    </nav>
+
+    <div class="hero">
+        Empowering Talent, Driving Success
+    </div>
+
+    <div class="container">
+        <section id="introduction" class="section">
+            <h2>About Us</h2>
+            <p>Welcome to 3 SEA'S SOLUTIONS, your trusted partner in human resource management. We specialize in connecting businesses with the right talent and fostering growth through effective HR solutions. Our mission is to bridge the gap between companies and exceptional professionals with a focus on integrity, efficiency, and innovation.</p>
+            <img src="about-us.jpg" alt="About Us">
+        </section>
+
+        <section id="recruitment" class="section">
+            <h2>Recruitment Procedure</h2>
+            <p>Our structured recruitment process ensures that we deliver top-tier candidates tailored to your business needs:</p>
+            <ol>
+                <li>Comprehensive Needs Assessment</li>
+                <li>Strategic Talent Sourcing</li>
+                <li>Rigorous Screening and Interviews</li>
+                <li>Final Selection and Onboarding Support</li>
+            </ol>
+            <img src="recruitment-process.jpg" alt="Recruitment Process">
+        </section>
+
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Permanent Staffing Solutions</li>
+                <li>Temporary and Contract Staffing</li>
+                <li>HR Consulting and Compliance</li>
+                <li>Employee Training and Development</li>
+                <li>Workforce Planning and Strategy</li>
+            </ul>
+            <img src="services.jpg" alt="Our Services">
+        </section>
+
+        <section id="apply" class="section">
+            <h2>Apply for a Job</h2>
+            <p>Looking for your next career move? Submit your application and let us connect you with opportunities that match your skills and aspirations.</p>
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 3 SEA'S SOLUTIONS. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
